@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form  action="index2.html" onsubmit="return validateForm()" >
+        <div class="fname">
+            <label>First Name<span style="color: red;">*</span> </label>
+            <input type="text" name="fname" id="fname"><br>
+            <span id="nameSpan1">your name should contain characters only</span><br>      <!--span [0]-->
+        </div>
+
+        <div class="fname">
+        <label>Last Name<span style="color: red;">*</span></label>
+        <input type="text" name="lname" id="lname"><br>
+        <span id="nameSpan2">your name should contain characters only</span><br>    <!--span [1]-->
+    </div>
+        <div class="email">
+            <label>Email<span style="color: red;">*</span></label>
+
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" ><br>
+            <span id="emailSpan">invalid email</span><br>                                 <!--span [2]-->
+        </div>
+        <div class="pass"><label>Password<span style="color: red;">*</span></label>
+
+            <input type="password" name="password" id="password1"><br>
+            <span id="passwordSpan1">password should be 8 characters at least </span><br>                   <!--span [3]-->
+        </div>
+
+        <div class="pass"><label>Confirm Password<span style="color: red;">*</span></label>
+
+            <input type="password" name="password" id="password2" ><br>
+            <span id="passwordSpan2">invalid password </span><br>                          <!--span[4]-->
+        </div>
+
+        
+        <div class="submit">
+            <input type="submit" value="Sign-up" id="submit">
+        </div>
+
+
+    </form>
+   <script src="cookieLibrary.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

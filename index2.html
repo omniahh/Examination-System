@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <form action="index3.html" name="myForm"  onsubmit="return validateLogin()" >
+     
+        <div class="email">
+            <label>Email<span style="color: red;">*</span></label>
+
+            <input type="email" name="email" id="loginEmail"><br>
+        
+        </div>
+        <div class="pass"><label>Password<span style="color: red;">*</span></label>
+
+            <input type="password" name="password" id="loginPassword" ><br>
+            <span id="passLoginSpan">Invalid email or password </span><br>
+        </div>
+
+      
+        <div class="submit">
+            <input type="submit" value="Sign-in" id="submit">
+        </div>
+
+
+    </form>
+    <script src="cookieLibrary.js"></script>
+     <script src="script.js"></script> 
+</body>
+
+</html>
